@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Indo Research</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center">
+            <div class="col-lg-6 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="">
+                        <i class="fab fa-twitter fw-normal text-secondary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="">
+                        <i class="fab fa-facebook-f fw-normal text-secondary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="">
+                        <i class="fab fa-linkedin-in fw-normal text-secondary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle me-2" href="">
+                        <i class="fab fa-instagram fw-normal text-secondary"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-light btn-square rounded-circle" href="">
+                        <i class="fab fa-youtube fw-normal text-secondary"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px; font-size: 13px;">
+                    <a href="#" class="text-light me-2"> Evaluator Login</a><small> | </small>
+                    <a href="#" class="text-light mx-2"> Evaluator Sign-Up</a><small> | </small>
+                    <a href="#" class="text-light ms-2"> Client Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="img/logo.png" class="img-fluid" alt="logo"></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <span class="dropdown-toggle">Solutions </span>
+                        </a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#" class="dropdown-item">Mystery Shopping</a>
+                            <a href="#" class="dropdown-item">Stock Audits</a>
+                            <a href="#" class="dropdown-item"> Compliance Audits</a>
+                            <a href="#" class="dropdown-item"> Field Investigations</a>
+                            <a href="#" class="dropdown-item"> Data Collection & Analysis</a>
+                            <a href="#" class="dropdown-item"> Employee Engagement Surveys</a>
+                            <a href="#" class="dropdown-item"> Customized Surveys</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link">About Us</a>
+                    <a href="#" class="nav-item nav-link">Evaluator</a>
+                    <a href="#" class="nav-item nav-link">Careers</a>
+                    <a href="#" class="nav-item nav-link">Blog</a>
+                </div>
+                <!-- <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3"
+                    data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button> -->
+                <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">
+                    Contact Us
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Carousel Start -->
+    <div class="carousel-header">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <video id="bgVideo" autoplay muted loop playsinline style="width: 100%; position: relative;">
+                        <source src="img/indo-video-1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <div class="text-center p-4" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.1s">Solution For All Type Of Visas</h4>
+                            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.3s">Immigration Process Starts Here!</h1>
+                            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is
+                                simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                            </p>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" href="#">More Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video id="bgVideo" autoplay muted loop playsinline style="width: 100%; position: relative;">
+                        <source src="img/indo-video-2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <div class="text-center p-4" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase fw-bold mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.1s">Solution For All Type Of Visas</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-3 mb-md-4 wow fadeInUp"
+                                data-wow-delay="0.3s">Best Visa Immigrations Services</h1>
+                            <p class="text-white mb-4 mb-md-5 fs-5 wow fadeInUp" data-wow-delay="0.5s">Lorem Ipsum is
+                                simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s,
+                            </p>
+                            <a class="btn btn-primary border-secondary rounded-pill text-white py-3 px-5 wow fadeInUp"
+                                data-wow-delay="0.7s" href="#">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-secondary wow fadeInLeft" data-wow-delay="0.2s"
+                    aria-hidden="false"></span>
+                <span class="visually-hidden-focusable">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-secondary wow fadeInRight" data-wow-delay="0.2s"
+                    aria-hidden="false"></span>
+                <span class="visually-hidden-focusable">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Our Edge start -->
+    <div class="container-fluid bg-light py-5 mb-5">
+        <h2 class="text-center mb-5">Our Edge</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-primary" id="insights-tab" data-bs-toggle="tab"
+                    data-bs-target="#insights" type="button" role="tab" aria-controls="insights"
+                    aria-selected="true">Actionable Insights</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-primary" id="location-tab" data-bs-toggle="tab" data-bs-target="#location"
+                    type="button" role="tab" aria-controls="location" aria-selected="false">We Are, Where You
+                    Are!</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-primary" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech"
+                    type="button" role="tab" aria-controls="tech" aria-selected="false">Technology</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-primary" id="consulting-tab" data-bs-toggle="tab"
+                    data-bs-target="#consulting" type="button" role="tab" aria-controls="consulting"
+                    aria-selected="false">Consulting</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active p-5" id="insights" role="tabpanel" aria-labelledby="insights-tab">
+                <h4 class="text-warning">Actionable Insights</h4>
+                <p class="text-justify">
+                    Actionable insights are data-driven conclusions that drive strategic decisions and tangible
+                    actions.
+                    They transform raw information into meaningful steps for business growth, process improvement,
+                    or
+                    customer engagement. To extract actionable insights, analyze trends, patterns, and correlations,
+                    ensuring relevance to specific goals. Businesses use these insights to optimize marketing
+                    strategies, enhance customer experience, and streamline operations. For example, e-commerce
+                    platforms leverage user behavior data to personalize recommendations, increasing conversions. In
+                    corporate settings, insights guide leadership in decision-making, talent retention, and market
+                    positioning. By leveraging actionable insights effectively, organizations gain a competitive
+                    edge,
+                    fostering innovation, efficiency, and sustained success.
+                </p>
+                <button class="btn btn-light">Connect</button>
+            </div>
+            <div class="tab-pane fade p-5" id="location" role="tabpanel" aria-labelledby="location-tab">
+                <h4 class="text-warning">We Are, Where You Are!</h4>
+                <p class="text-justify">
+                    "We Are, Where You Are!" conveys a strong message of presence, accessibility, and commitment. It
+                    signifies that your brand, service, or support is always within reach, no matter the location.
+                    This
+                    tagline resonates well with businesses that prioritize customer engagement, global reach, and
+                    seamless service delivery. Whether in technology, education, or corporate sectors, it reassures
+                    clients that they are never alone in their journey. Use this slogan to highlight your widespread
+                    presence, personalized solutions, and dedication to being a trusted partner in success. It
+                    reinforces reliability, making your audience feel connected and valued at every step.
+                </p>
+                <button class="btn btn-light">Learn More</button>
+            </div>
+            <div class="tab-pane fade p-5" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+                <h4 class="text-warning">Technology</h4>
+                <p class="text-justify">
+                    Technology is the driving force behind innovation, transforming industries and shaping the
+                    future.
+                    From artificial intelligence and cloud computing to blockchain and IoT, technological
+                    advancements
+                    enhance efficiency, connectivity, and problem-solving capabilities. Businesses leverage
+                    technology
+                    to automate processes, improve customer experiences, and gain competitive advantages. In
+                    education,
+                    technology fosters interactive learning through e-learning platforms and AI-driven tutoring. The
+                    rise of cybersecurity safeguards digital assets, ensuring data privacy. As technology evolves,
+                    staying updated with trends is crucial for growth and adaptability. Embracing technology
+                    empowers
+                    organizations and individuals, paving the way for smarter, faster, and more sustainable
+                    solutions in
+                    every field.
+                </p>
+                <button class="btn btn-light">Explore</button>
+            </div>
+            <div class="tab-pane fade p-5" id="consulting" role="tabpanel" aria-labelledby="consulting-tab">
+                <h4 class="text-warning">Consulting</h4>
+                <p class="text-justify">
+                    Consulting is the art of providing expert advice, strategic insights, and tailored solutions to
+                    businesses and individuals. It helps organizations optimize operations, improve efficiency, and
+                    achieve sustainable growth. Consultants specialize in various domains, including technology,
+                    finance, management, and marketing, offering data-driven recommendations to solve complex
+                    challenges. They analyze market trends, identify opportunities, and implement best practices to
+                    enhance decision-making. In the digital era, IT and business consulting drive transformation,
+                    enabling companies to adapt to evolving technologies and industry landscapes. By leveraging
+                    consulting services, businesses gain a competitive edge, minimize risks, and unlock new avenues
+                    for
+                    success.
+                </p>
+                <button class="btn btn-light">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <!-- Our Edge end -->
+
+    <!--We've Got You Covered Start -->
+    <div class="container-fluid py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 900px;">
+            <h4 class="text-primary display-6"> We've Got You Covered</h4>
+            <hr>
+            <p class="mb-0">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia expedita laudantium laboriosam! Odio
+                suscipit, ipsum consequatur pariatur quibusdam vitae nam!
+            </p>
+        </div>
+        <section
+            class="has_eae_slider elementor-section elementor-top-section elementor-element elementor-element-5534b38 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="5534b38" data-element_type="section" id="xs_cta_style_20">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="has_eae_slider elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4a995ba1"
+                    data-id="4a995ba1" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <section
+                            class="has_eae_slider elementor-section elementor-inner-section elementor-element elementor-element-7da0dad7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                            data-id="7da0dad7" data-element_type="section">
+                            <div class="elementor-container elementor-column-gap-default">
+                                <div class="has_eae_slider elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1af9f3c4"
+                                    data-id="1af9f3c4" data-element_type="column">
+                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                        <div class="elementor-element elementor-element-df6ae6c elementor-widget elementor-widget-tp-video-player"
+                                            data-id="df6ae6c" data-element_type="widget"
+                                            data-widget_type="tp-video-player.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="pt_plus_video-box-shadow video_player67a489fc057f1  ">
+                                                    <div class="pt_plus_video_player   text-">
+                                                        <div class="ts-video-wrapper ts-type-self-hosted">
+                                                            <video class="lazy" width="100%" autoplay=""
+                                                                playsinline="&quot;&quot;" loop="" muted="">
+                                                                <source src="img/service-videos.mp4" type="video/mp4">
+                                                            </video>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- Our Services start -->
+    <div class="containerBox">
+        <div class="containerService">
+
+            <div class="slide">
+
+                <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
+                    <div class="content">
+                        <div class="name">Switzerland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
+                    <div class="content">
+                        <div class="name">Finland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
+                    <div class="content">
+                        <div class="name">Iceland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
+                    <div class="content">
+                        <div class="name">Australia</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
+                    <div class="content">
+                        <div class="name">Netherland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
+                    <div class="content">
+                        <div class="name">Ireland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button">
+                <button class="prev" id="prevData"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="next" id="nextData"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <!-- Our Services end -->
+
+
+
+    <section class="section boxNew">
+        <div class="overlay"></div>
+        <div class="image-overlay"></div>
+        <div class="content">
+            <h2>Become an Evaluator!</h2>
+            <p>Connect with all your stakeholders better through insights from our auditing services.</p>
+            <a href="#" class="btn">Join Today</a>
+        </div>
+    </section>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid testimonial overflow-hidden pb-5">
+        <div class="container py-5">
+            <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="sub-style">
+                    <h5 class="sub-title text-primary px-3">OUR CLIENTS RIVIEWS</h5>
+                </div>
+                <h1 class="display-5 mb-4">What Our Clients Say</h1>
+                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque
+                    sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam
+                    necessitatibus saepe in ab? Repellat!</p>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow zoomInDown" data-wow-delay="0.2s">
+                <div class="testimonial-item">
+                    <div class="testimonial-content p-4 mb-5">
+                        <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitati eiusmod tempor incididunt.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                            <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="img">
+                        </div>
+                        <div class="my-auto">
+                            <h5>Person Name</h5>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content p-4 mb-5">
+                        <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitati eiusmod tempor incididunt.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                            <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" alt="img">
+                        </div>
+                        <div class="my-auto">
+                            <h5>Person Name</h5>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content p-4 mb-5">
+                        <p class="fs-5 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitati eiusmod tempor incididunt.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="rounded-circle me-4" style="width: 100px; height: 100px;">
+                            <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" alt="img">
+                        </div>
+                        <div class="my-auto">
+                            <h5>Person Name</h5>
+                            <p class="mb-0">Profession</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-12">
+                    <div class="mb-5">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="footer-item">
+                                    <a href="index.html" class="p-0">
+                                        <!-- <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3> -->
+                                        <img src="img/logo.png" alt="Logo" class="logo" width="100">
+                                    </a>
+                                    <p class="text-white mb-4">Indo Research Services has been in existence since 2006
+                                        and during the past 18
+                                        years has accumulated a rich experience of working in all the Indian states.</p>
+                                    <div class="footer-btn d-flex">
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
+                                                class="fab fa-instagram"></i></a>
+                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="footer-item">
+                                    <h4 class="text-white mb-4">Useful Links</h4>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                    <div class="col-lg-12 mb-3">
+                                        <div class="d-flex">
+                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white">Address</h4>
+                                                <p class="mb-0">Noida Sect-63, UP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mb-3">
+                                        <div class="d-flex">
+                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                <i class="fas fa-envelope fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white">Mail Us</h4>
+                                                <p class="mb-0">singhshail2@indoresearch.in</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mb-3">
+                                        <div class="d-flex">
+                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                <i class="fa fa-phone-alt fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-white">Telephone</h4>
+                                                <p class="mb-0">+91-9891227327</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
+                            </div>
+
+                        </div>
+                    </div>
+                  
+                </div>
+
+              
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-end mb-md-0">
+                    <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Indo Research Pvt. Ltd.</a>,
+                    All
+                    right
+                    reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-start">
+                    Design and Development by <a href="https://macreel.co.in/" target="_blank"
+                        class="text-secondary"><img src="/img/macreel.png" style="width: 80px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
