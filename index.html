@@ -337,63 +337,75 @@
 
 
     <!-- Our Services start -->
-    <div class="containerBox">
-        <div class="containerService">
 
-            <div class="slide">
 
-                <div class="item" style="background-image: url(https://i.ibb.co/qCkd9jS/img1.jpg);">
-                    <div class="content">
-                        <div class="name">Switzerland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/jrRb11q/img2.jpg);">
-                    <div class="content">
-                        <div class="name">Finland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/NSwVv8D/img3.jpg);">
-                    <div class="content">
-                        <div class="name">Iceland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/Bq4Q0M8/img4.jpg);">
-                    <div class="content">
-                        <div class="name">Australia</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/jTQfmTq/img5.jpg);">
-                    <div class="content">
-                        <div class="name">Netherland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url(https://i.ibb.co/RNkk6L0/img6.jpg);">
-                    <div class="content">
-                        <div class="name">Ireland</div>
-                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                        <button>See More</button>
-                    </div>
-                </div>
+    <div class="container-fluid py-5 mb-5" style="background: #1d2c3b;">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 900px;">
+            <h4 class="text-white display-6" style="font-family: poppins;">Our Services</h4>
+            <hr>
+            <p class="mb-0 text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, labore?
+            </p>
+        </div>
 
+        <div id="productCarousel" class="carousel slide bg-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row !align-items-center">
+                        <div class="col-md-6 p-5">
+                            <div class="text-center text-light">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident soluta dolorem
+                                tempore error explicabo blanditiis nesciunt totam saepe tenetur inventore, cupiditate ab
+                                dolorum nostrum alias? Soluta odit expedita minima debitis!
+                            </div>
+                            <div class="carousel-caption captionBox">
+                                <h5 class="text-light">Mystery Shopping</h5>
+                                <p class="text-light text-center">Up to 5 Years Warranty on an incredible selection of
+                                    monitors, gorgeous displays.</p>
+                                <!-- <a href="#" class="btn btn-primary">Shop Monitor Deals</a> -->
+                                <a href="#" class="btn btn-outline-light">Explore All</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-0">
+                            <img src="img/carousel-1.jpg" class="d-block w-100" alt="Monitor">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row !align-items-center">
+                        <div class="col-md-6 p-5">
+                            <div class="text-center text-light">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident soluta dolorem
+                                tempore error explicabo blanditiis nesciunt totam saepe tenetur inventore, cupiditate ab
+                                dolorum nostrum alias? Soluta odit expedita minima debitis!
+                            </div>
+                            <div class="carousel-caption captionBox">
+                                <h5 class="text-center text-light">Stock Audits</h5>
+                                <p class="text-center text-light">Stealth mode-ready with high-speed performance up to
+                                    Intel® Core™ Unlocked processors.
+                                </p>
+                                <!-- <a href="#" class="btn btn-primary">Shop Now</a> -->
+                                <a href="#" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/carousel-2.jpg" class="d-block w-100" alt="Alienware Laptop">
+                        </div>
+                    </div>
+                </div>
+               
             </div>
-
-            <div class="button">
-                <button class="prev" id="prevData"><i class="fa-solid fa-arrow-left"></i></button>
-                <button class="next" id="nextData"><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
+
     <!-- Our Services end -->
 
 
@@ -402,9 +414,9 @@
         <div class="overlay"></div>
         <div class="image-overlay"></div>
         <div class="content">
-            <h2>Become an Evaluator!</h2>
+            <h2 class="text-secondary">Become an Evaluator!</h2>
             <p>Connect with all your stakeholders better through insights from our auditing services.</p>
-            <a href="#" class="btn">Join Today</a>
+            <a href="#" class="btnToday">Join Today</a>
         </div>
     </section>
 
@@ -499,106 +511,87 @@
     <!-- Testimonial End -->
 
 
-
     <!-- Footer Start -->
     <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-xl-12">
-                    <div class="mb-5">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="footer-item">
-                                    <a href="index.html" class="p-0">
-                                        <!-- <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3> -->
-                                        <img src="img/logo.png" alt="Logo" class="logo" width="100">
-                                    </a>
-                                    <p class="text-white mb-4">Indo Research Services has been in existence since 2006
-                                        and during the past 18
-                                        years has accumulated a rich experience of working in all the Indian states.</p>
-                                    <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="footer-item">
-                                    <h4 class="text-white mb-4">Useful Links</h4>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-                                    <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                    <div class="col-lg-12 mb-3">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-map-marker-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Address</h4>
-                                                <p class="mb-0">Noida Sect-63, UP</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 mb-3">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fas fa-envelope fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Mail Us</h4>
-                                                <p class="mb-0">singhshail2@indoresearch.in</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12 mb-3">
-                                        <div class="d-flex">
-                                            <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                <i class="fa fa-phone-alt fa-2x"></i>
-                                            </div>
-                                            <div>
-                                                <h4 class="text-white">Telephone</h4>
-                                                <p class="mb-0">+91-9891227327</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                              
-                            </div>
-
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Contact Info</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                        <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
-                  
                 </div>
-
-              
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Opening Time</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Satday:</h6>
+                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Vacation:</h6>
+                            <p class="text-white mb-0">All Sunday is our vacation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Our Services</h4>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Business</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Evaluation</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Migrate</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Study</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Counselling</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Work / Career</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="text-secondary mb-4">Newsletter</h4>
+                        <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="position-relative mx-auto rounded-pill">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Enter your email">
+                            <button type="button"
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
 
+
     <!-- Copyright Start -->
     <div class="container-fluid copyright py-4">
         <div class="container">
             <div class="row g-4 align-items-center">
-                <div class="col-md-6 text-center text-md-end mb-md-0">
-                    <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Indo Research Pvt. Ltd.</a>,
-                    All
-                    right
-                    reserved.
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-white"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right
+                        reserved.</span>
                 </div>
-                <div class="col-md-6 text-center text-md-start">
-                    Design and Development by <a href="https://macreel.co.in/" target="_blank"
-                        class="text-secondary"><img src="/img/macreel.png" style="width: 80px;"></a>
+                <div class="col-md-6 text-center text-md-end text-white">
+                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                    Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
         </div>
@@ -622,7 +615,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/custom.js"></script>
 </body>
 
 </html>

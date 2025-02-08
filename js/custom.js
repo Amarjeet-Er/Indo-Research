@@ -1,24 +1,21 @@
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
-let slide = document.querySelector('.slide');
+let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+let items = document.querySelectorAll('.item')
 let totalItem = 6;
 let count = 0;
+next.addEventListener('click', function(){
+if(count > 6){
+    count = 0;
+}
+   
+    document.querySelector('.slide').appendChild(items[count])
+    count++;
+})
 
-next.addEventListener('click', function () {
-    let items = document.querySelectorAll('.item'); // Fetch the latest items
-    if (count >= totalItem) {
+prev.addEventListener('click', function(){
+    if(count < 0){
         count = 0;
     }
-    slide.appendChild(items[0]); // Move first item to the end
-    count++;
-});
-
-prev.addEventListener('click', function () {
-    let items = document.querySelectorAll('.item'); // Fetch the latest items
-    if (count <= 0) {
-        count = totalItem - 1;
-    } else {
-        count--;
-    }
-    slide.prepend(items[items.length - 1]); // Move last item to the beginning
-});
+    document.querySelector('.slide').prepend(items[count]) 
+    count--;
+})
