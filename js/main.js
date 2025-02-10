@@ -18,11 +18,11 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.nav-bar').addClass('sticky-top shadow-sm');
-        } else {
-            $('.nav-bar').removeClass('sticky-top shadow-sm');
-        }
+        // if ($(this).scrollTop() > 45) {
+        //     $('.nav-bar').addClass('sticky-top shadow-sm');
+        // } else {
+        //     $('.nav-bar').removeClass('sticky-top shadow-sm');
+        // }
     });
 
     // Facts counter
