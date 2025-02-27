@@ -101,3 +101,184 @@
         transform: translateY(0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+/*** Carousel Hero Header Start ***/
+.header-carousel .header-carousel-item img {
+    object-fit: cover;
+}
+
+.header-carousel .header-carousel-item,
+.header-carousel .header-carousel-item img {
+    height: 630px;
+}
+
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: var(--bs-danger);
+    color: var(--bs-white);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.header-carousel .owl-nav .owl-prev {
+    bottom: 30px;
+    left: 30px;
+    margin-left: 90px;
+}
+
+.header-carousel .owl-nav .owl-next {
+    bottom: 30px;
+    left: 30px;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    box-shadow: inset 0 0 100px 0 var(--bs-light);
+    color: var(--bs-primary);
+}
+
+
+.header-carousel .header-carousel-item .carousel-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(9, 30, 62, .4);
+}
+
+@media (max-width: 991px) {
+    .header-carousel .header-carousel-item .carousel-caption {
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 15px;
+    }
+
+    .navbar .dropdown-toggle::after {
+        display: block;
+        position: absolute;
+        top: 13px;
+        font-size: 24px;
+        right: 0px;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        padding-top: 120px;
+        display: flex;
+        align-items: center;
+        background-color: rgba(9, 30, 62, .3);
+    }
+
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: 320px;
+    }
+
+    .navtext {
+        display: none;
+    }
+
+    .header-carousel .owl-nav .owl-prev {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: -45px;
+        margin-bottom: -20px;
+        display: none;
+    }
+
+
+    .header-carousel .owl-nav .owl-next {
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 45px;
+        margin-bottom: -20px;
+        display: none;
+    }
+}
+
+
+/* .header-carousel .header-carousel-item img {
+    animation-name: image-zoom;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s;
+} */
+
+@keyframes image-zoom {
+    0% {
+        height: 100%;
+        /* opacity: 0.9; */
+    }
+
+    25% {
+        height: 110%;
+        /* opacity: 0.50; */
+    }
+
+    50% {
+        height: 115%;
+        /* opacity: 1; */
+    }
+
+    75% {
+        height: 110%;
+        /* opacity: 0.50; */
+    }
+
+    100% {
+        height: 100%;
+        /* opacity: 0.9; */
+    }
+}
+
+/*** Carousel Hero Header End ***/
+
+
+ /* Ensure all images have the same size */
+ .imageBox img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover; /* Ensures image fills the dimensions properly */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+/* Centering images */
+.imageBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between images */
+    padding: 20px;
+}
