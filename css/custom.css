@@ -177,6 +177,16 @@
 @media (max-width: 767px) {
     .navbar-light .navbar-nav .nav-link {
         font-size: 15px;
+        text-align: start;
+        border-bottom: 1px solid gray;
+        width: 100%;
+    }
+    /* .navbar-light .navbar-nav .nav-link:hover {
+        background-color: var(--bs-primary);
+        color: white;
+    } */
+    .navbar-light .navbar-nav .nav-link:last-child {
+        margin: 0 0 10px;
     }
 
     .navbar .dropdown-toggle::after {
