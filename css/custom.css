@@ -266,12 +266,12 @@
 /*** Carousel Hero Header End ***/
 
 
- /* Ensure all images have the same size */
- .imageBox img {
+/* Ensure all images have the same size */
+.imageBox img {
     width: 200px;
     height: 120px;
-    object-fit: cover; /* Ensures image fills the dimensions properly */
-    border-radius: 5px; /* Optional: Adds rounded corners */
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /* Centering images */
@@ -279,6 +279,43 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Adds spacing between images */
+    gap: 10px;
     padding: 20px;
+}
+
+.serviceparagraph {
+    position: relative;
+    top: 20px;
+    padding: 20px 0 0 100px;
+}
+
+@media (max-width: 560px) {
+    .imageBox img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceparagraph {
+        padding: 20px 0 0 20px;
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-tabs .nav-link {
+        width: 100%;
+        border: 1px solid rgb(226, 223, 223);
+        border-radius: none !important;
+        padding: 10px;
+    }
+
+    .nav-tabs .nav-link.active {
+        border: 1px solid #145bb78d;
+    }
+
+
 }
