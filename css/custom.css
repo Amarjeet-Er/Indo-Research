@@ -321,6 +321,7 @@
         border: 1px solid rgb(226, 223, 223);
         border-radius: none !important;
         padding: 10px;
+        margin: 0 0 5px;
     }
 
     .nav-tabs .nav-link.active {
