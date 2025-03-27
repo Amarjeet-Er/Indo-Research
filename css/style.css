@@ -872,11 +872,11 @@
 
 /*** Footer Start ***/
 .footer {
-    background: var(--bs-primary);
+    background: #17303b;
 }
 .footer .footer-item a {
     line-height: 30px;
-    color: var(--bs-white);
+    color: var(--bs-gray);
     transition: 0.5s;
 }
 
@@ -885,8 +885,8 @@
 }
 
 .footer .footer-item a:hover {
-    letter-spacing: 2px;
-    color: var(--bs-secondary);
+    letter-spacing: 0.5px;
+    color: var(--bs-green);
 }
 
 /*** Footer End ***/
