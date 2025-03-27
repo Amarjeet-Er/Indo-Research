@@ -299,6 +299,9 @@
     padding: 20px 0 0 100px;
 }
 
+.restophead{
+    display: none;
+}
 @media (max-width: 560px) {
     .imageBox img {
         width: 100%;
@@ -327,6 +330,9 @@
     .nav-tabs .nav-link.active {
         border: 1px solid #145bb78d;
     }
-
+    .restophead{
+        display: block;
+    }
 
 }
+
