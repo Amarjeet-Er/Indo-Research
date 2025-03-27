@@ -2463,7 +2463,8 @@ textarea.form-control-lg {
     border-radius: 10px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none
+    appearance: none;
+    margin: 10px 0;
 }
 
 .form-select:focus {
